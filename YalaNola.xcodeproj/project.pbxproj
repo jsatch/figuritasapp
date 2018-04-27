@@ -13,6 +13,8 @@
 		5F21B9C1206A010B00398412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F21B9C0206A010B00398412 /* Assets.xcassets */; };
 		5F21B9C4206A010B00398412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F21B9C2206A010B00398412 /* LaunchScreen.storyboard */; };
 		5F21B9CD206A0A6600398412 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F21B9CC206A0A6600398412 /* StickerView.swift */; };
+		5F870FF2208CE89100E05D42 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F870FF1208CE89100E05D42 /* Sticker.swift */; };
+		5FA73811208A8138002F89FB /* StickersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA73810208A8138002F89FB /* StickersManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F21B9C3206A010B00398412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F21B9C5206A010B00398412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F21B9CC206A0A6600398412 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		5F870FF1208CE89100E05D42 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		5FA73810208A8138002F89FB /* StickersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				5F21B9CB206A09A300398412 /* SupportingFiles */,
 				5F21B9BB206A010B00398412 /* ViewController.swift */,
 				5F21B9BD206A010B00398412 /* Main.storyboard */,
-				5F21B9CC206A0A6600398412 /* StickerView.swift */,
+				5F870FF4208CEBBA00E05D42 /* Views */,
+				5F870FF3208CEAD900E05D42 /* Model */,
+				5F870FF1208CE89100E05D42 /* Sticker.swift */,
 				5F21B9C0206A010B00398412 /* Assets.xcassets */,
 				5F21B9C5206A010B00398412 /* Info.plist */,
 			);
@@ -73,6 +79,22 @@
 				5F21B9C2206A010B00398412 /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5F870FF3208CEAD900E05D42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FA73810208A8138002F89FB /* StickersManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5F870FF4208CEBBA00E05D42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F21B9CC206A0A6600398412 /* StickerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +124,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Hernan Quintana";
 				TargetAttributes = {
 					5F21B9B5206A010B00398412 = {
@@ -150,6 +172,8 @@
 				5F21B9BC206A010B00398412 /* ViewController.swift in Sources */,
 				5F21B9BA206A010B00398412 /* AppDelegate.swift in Sources */,
 				5F21B9CD206A0A6600398412 /* StickerView.swift in Sources */,
+				5FA73811208A8138002F89FB /* StickersManager.swift in Sources */,
+				5F870FF2208CE89100E05D42 /* Sticker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +213,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -196,6 +221,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -223,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -246,6 +272,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -253,6 +280,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -274,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -287,6 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6WY88CSS3;
 				INFOPLIST_FILE = YalaNola/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsatch.YalaNola;
@@ -301,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6WY88CSS3;
 				INFOPLIST_FILE = YalaNola/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsatch.YalaNola;
